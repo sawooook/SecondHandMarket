@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chat_Main_Activity"
+    tools:layout_editor_absoluteY="81dp">
+    <View
+        android:id="@+id/vivfew2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="#2a2a2a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="10dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="470dp" />
+
+        <LinearLayout
+            android:id="@+id/Main_Chat_Home"
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/gray"
+                app:srcCompat="@drawable/ic_home_black_24dp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="17dp"
+            android:layout_height="13dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="470dp" />
+
+        <LinearLayout
+            android:id="@+id/Main_Chat_add"
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView8437"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/gray"
+                app:srcCompat="@drawable/write" />
+
+            <TextView
+                android:id="@+id/textView2443"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="17dp"
+            android:layout_height="13dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="470dp" />
+
+        <LinearLayout
+            android:id="@+id/Main_Chat_Chat"
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView87"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:tint="@color/orange"
+                app:srcCompat="@drawable/ic_notifications_black_24dp" />
+
+            <TextView
+                android:id="@+id/textView244234"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Chat"
+                android:textColor="@color/orange" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="17dp"
+            android:layout_height="13dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="470dp" />
+
+        <LinearLayout
+            android:id="@+id/Main_Chat_Mypage"
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/gray"
+                app:srcCompat="@drawable/person" />
+
+            <TextView
+                android:id="@+id/textView247567"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mypage"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_chat"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".FragmentOne">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/fagment_one_spiner"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:entries="@array/city"
+
+                    />
+
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="41dp"
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:listitem="@layout/mainpage_item_list" />
+        </LinearLayout>
+
+</FrameLayout>

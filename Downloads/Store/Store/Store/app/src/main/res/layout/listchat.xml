@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liner_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/read_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/read_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="읽음"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/read_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18:00분"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/messageItem_linerlayout_destionation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/messageItem_imageview_profile"
+            android:layout_width="50dp"
+
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/idididid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="이름" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/gooddood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000" />
+
+
+        <ImageView
+            android:id="@+id/array_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher_round" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/opposite_read_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/opposite_read_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/opposite_read_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18:00분"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

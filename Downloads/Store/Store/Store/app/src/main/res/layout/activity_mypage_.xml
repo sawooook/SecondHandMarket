@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mypage_Activity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="10dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="470dp" />
+
+        <LinearLayout
+            android:id="@+id/Main_Mypage_Home"
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/gray"
+                app:srcCompat="@drawable/ic_home_black_24dp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="17dp"
+            android:layout_height="13dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="470dp" />
+
+        <LinearLayout
+            android:id="@+id/Main_Mypage_add"
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView8437"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/gray"
+                app:srcCompat="@drawable/write" />
+
+            <TextView
+                android:id="@+id/textView2443"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="17dp"
+            android:layout_height="13dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="470dp" />
+
+        <LinearLayout
+            android:id="@+id/Main_Mypage_Chat"
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView87"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/gray"
+                app:srcCompat="@drawable/ic_notifications_black_24dp" />
+
+            <TextView
+                android:id="@+id/textView244234"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Chat"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="17dp"
+            android:layout_height="13dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="470dp" />
+
+        <LinearLayout
+            android:id="@+id/Main_Mypage_Mypage"
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:tint="@color/orange"
+                app:srcCompat="@drawable/person" />
+
+            <TextView
+                android:id="@+id/textView247567"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mypage"
+
+                android:textColor="@color/orange" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vivfew2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:background="#2a2a2a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <TextView
+        android:id="@+id/mypaget1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="196dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/ko3"
+        android:text="아이디"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shadow_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.209" />
+
+    <ImageView
+        android:id="@+id/image123r4View2"
+        android:layout_width="28dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="10dp"
+        android:tint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.287"
+        app:srcCompat="@drawable/ic_settings_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView545"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/ko3"
+        android:text="설정"
+        android:textColor="@color/orange"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256" />
+
+    <ScrollView
+        android:layout_width="383dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.540">
+
+        <LinearLayout
+            android:id="@+id/buttobfn12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.642"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/layoutbutton"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="166dp">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ko2"
+                    android:text="내위치받아오기"
+                    android:textColor="#3b3b3b"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <Space
+                    android:layout_width="107dp"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="right|center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:tint="#2a2a2a"
+                        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                    <Space
+                        android:layout_width="25dp"
+                        android:layout_height="10dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/textlines"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="276dp">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/textVie54w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ko2"
+                    android:text="지갑불러오기"
+                    android:textColor="#3b3b3b"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <Space
+                    android:layout_width="220dp"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="right|center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageView61"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:tint="#2a2a2a"
+                        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                    <Space
+                        android:layout_width="25dp"
+                        android:layout_height="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Minigame"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/textlines"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="386dp">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/textViegfg5324wcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ko2"
+                    android:text="미니게임"
+                    android:textColor="#3b3b3b"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <Space
+                    android:layout_width="250dp"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="right|center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageView76"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:tint="#2a2a2a"
+                        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                    <Space
+                        android:layout_width="25dp"
+                        android:layout_height="10dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/mypaget2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="닉네임"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/textlines"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="331dp">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/textViegfg54wcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ko2"
+                    android:text="AR댄스"
+                    android:textColor="#3b3b3b"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <Space
+                    android:layout_width="259dp"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="right|center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageVivfdew6"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:tint="#2a2a2a"
+                        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                    <Space
+                        android:layout_width="25dp"
+                        android:layout_height="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/News"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/textlines"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="276dp">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/textVfie54w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ko2"
+                    android:text="뉴스(크롤링)"
+                    android:textColor="#3b3b3b"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <Space
+                    android:layout_width="222dp"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="right|center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imagvfeView6"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:tint="#2a2a2a"
+                        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                    <Space
+                        android:layout_width="25dp"
+                        android:layout_height="10dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/textlines"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="221dp">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/textViegfg54w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ko2"
+                    android:text="광고시청하기"
+                    android:textColor="#3b3b3b"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <Space
+                    android:layout_width="220dp"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="right|center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageViewvfd6"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:tint="#2a2a2a"
+                        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                    <Space
+                        android:layout_width="25dp"
+                        android:layout_height="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Logout_btn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/textlines"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="276dp">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/textVfie5ccc4w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ko2"
+                    android:text="로그아웃"
+                    android:textColor="#3b3b3b"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <Space
+                    android:layout_width="251dp"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="right|center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageVievw6"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:tint="#2a2a2a"
+                        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                    <Space
+                        android:layout_width="25dp"
+                        android:layout_height="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="76dp"
+        android:text="닉네임"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/mypage_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:fontFamily="@font/ko2"
+        android:text="경기도수원시장안구정자3동"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/mypaget1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mypagefragment_update_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kakao_editable_profile" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/sell_buy_btn"-->
+    <!--android:layout_width="368dp"-->
+    <!--android:layout_height="52dp"-->
+    <!--android:background="@drawable/rounded"-->
+    <!--android:orientation="horizontal"-->
+    <!--tools:layout_editor_absoluteX="8dp"-->
+    <!--tools:layout_editor_absoluteY="134dp">-->
+
+
+    <!--</LinearLayout>-->
+
+
+</android.support.constraint.ConstraintLayout>

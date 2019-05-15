@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pc1.store">
+
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_key" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBtMVUUtUBiM2GF1qO0wvK6d8cs7dXfcyU" />
+        <meta-data
+            android:name="com.viromedia.API_KEY"
+            android:value="F977AE5F-F6F3-422C-9630-A6F3D628F986" />
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="optional" />
+
+        <activity
+            android:name="com.yongbeam.y_photopicker.util.photopicker.PhotoPickerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.yongbeam.y_photopicker.util.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Login_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <!--<activity-->
+            <!--android:name=".ViroActivity"-->
+            <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+            <!--android:screenOrientation="portrait">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Signup_Activity" />
+        <activity
+            android:name=".Unity_Basketball_Acitivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".UnityPlayerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape" />
+        <activity android:name=".kakaosig" />
+        <activity
+            android:name=".Main_Activity"
+            android:label="@string/title_activity_main_" />
+
+        <service android:name=".MainService" />
+
+        <activity android:name=".Mypage_Activity" />
+        <activity
+            android:name=".NainPage_Activity"
+            android:label="@string/title_activity_nain_page_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- <activity android:name=".FragmentOne" /> -->
+        <!-- <activity android:name=".FragmentTwo" /> -->
+        <!-- <activity android:name=".MypageFrageMent" /> -->
+        <!-- <activity android:name=".ChatFragment" /> -->
+        <!-- <activity android:name=".Setting_Activity" /> -->
+        <activity android:name=".MainActivity_test1" />
+        <activity
+            android:name=".Chatroom_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Mypage_update_Activity" />
+        <activity
+            android:name=".details_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".location_Activity" />
+        <activity
+            android:name=".test"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".filter_Activity" />
+        <activity android:name=".FaceActivity" />
+        <activity android:name=".review_Activity" />
+        <activity android:name=".sell_review" />
+        <activity android:name=".LoadWallet_Activity" />
+        <activity android:name=".token_wallet_Activity" />
+        <activity android:name=".Token_Send_Activity" />
+        <activity android:name=".Address_find_Acitivity" />
+        <activity android:name=".WebView_Activity" />
+        <activity android:name=".Youtube_Activity" />
+        <activity android:name=".Sell_finish_Activity" />
+
+        <receiver android:name=".MyBroadCastReceiver">
+            <intent-filter>
+                <action android:name="com.example.limky.broadcastreceiver.gogo" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".sell_review2" />
+        <activity android:name=".KakaoActivity" />
+        <activity android:name=".Sell_buy_Activity" />
+        <activity android:name=".viewpage_ac" />
+        <activity android:name=".image_big_Activity" />
+        <activity android:name=".Call_Webrtc_Activity" />
+        <activity
+            android:name=".ConnectActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="appr.tc"
+                    android:scheme="https" />
+                <data
+                    android:host="appr.tc"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/settings_name" />
+        <activity
+            android:name=".CallActivity"
+            android:configChanges="orientation|smallestScreenSize|screenSize|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="fullUser"
+            android:theme="@style/CallActivityTheme" />
+        <activity android:name=".Chat_Activity" />
+        <activity android:name=".Chat_Main_Activity" />
+        <activity android:name=".Add_Main_Activity" />
+        <activity android:name=".Crowling_Activity" />
+        <activity android:name=".item_click_Activity"></activity>
+    </application>
+
+</manifest>

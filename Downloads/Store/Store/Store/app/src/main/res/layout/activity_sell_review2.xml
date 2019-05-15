@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sell_review2"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RatingBar
+        android:id="@+id/sell_review_ratingBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="36dp"
+        android:numStars="5"
+        android:stepSize="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/sell_review_et2"
+        app:layout_constraintStart_toStartOf="@+id/sell_review_et2"
+        app:layout_constraintTop_toBottomOf="@+id/textView202" />
+
+    <TextView
+        android:id="@+id/textView202"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:layout_marginTop="29dp"
+        android:text="거래후기 남기기"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sell_review_ratingBar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/sell_review_review_finish_btn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:text="후기남기기"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sell_review_photo_btn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sell_review_photo_btn2" />
+
+    <EditText
+        android:id="@+id/sell_review_et2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginStart="34dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="구매완료후기를 남겨주세요.
+거래와 관련없는 후기는 삭제될수 있습니다"
+        android:inputType="textMultiLine"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout122"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sell_review_ratingBar2" />
+
+    <Button
+        android:id="@+id/sell_review_photo_btn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="34dp"
+        android:text="사진등록하기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sell_review_review_finish_btn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout122" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout122"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="34dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/sell_review_photo_btn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sell_review_et2">
+
+        <ImageView
+            android:id="@+id/review_image12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:srcCompat="@mipmap/ic_launcher_round"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="334dp" />
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="212dp"
+            tools:layout_editor_absoluteY="326dp" />
+
+
+        <ImageView
+            android:id="@+id/review_image22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:srcCompat="@mipmap/ic_launcher_round"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="334dp" />
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="212dp"
+            tools:layout_editor_absoluteY="326dp" />
+
+        <ImageView
+            android:id="@+id/review_image32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:srcCompat="@mipmap/ic_launcher_round"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="334dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ratingbar_num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

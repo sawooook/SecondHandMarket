@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="87dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:src="@drawable/token" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="129dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tokenname"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/ko3"
+                        android:textColor="#2a2a2a"
+                        android:layout_height="wrap_content"
+                        android:text="ETH"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="7dp"
+                        android:layout_height="5dp" />
+
+                    <TextView
+                        android:id="@+id/token_symbol"
+                        android:fontFamily="@font/ko2"
+                        android:textColor="#3b3b3b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="심볼"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="49dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/save_token"
+                android:fontFamily="@font/ko2"
+                android:textColor="#3b3b3b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="보유량"
+
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="74dp"
+                android:layout_height="49dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Token_Send_Activity"
+    tools:layout_editor_absoluteY="81dp">
+    <View
+        android:id="@+id/vivfew2545"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="#2a2a2a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <EditText
+        android:id="@+id/send_token_address"
+        android:layout_width="0dp"
+        android:fontFamily="@font/ko2"
+        android:layout_height="51dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/send_token_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="34dp"
+        android:fontFamily="@font/ko2"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/send_token_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/send_token_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/send_token_spinner" />
+
+    <Button
+        android:id="@+id/send_token_trasnfer"
+        android:layout_width="318dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginStart="62dp"
+        android:background="@drawable/round_orange_btn"
+        android:fontFamily="@font/ko3"
+        android:text="전송"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/send_token_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="34dp"
+        android:layout_marginTop="42dp"
+        android:entries="@array/token"
+        android:fontFamily="@font/ko2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/send_token_money"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/ko2"
+        android:textStyle="bold"
+        android:textColor="#666666"
+        android:layout_height="15dp"
+        android:layout_marginTop="92dp"
+        android:text="상대의 지갑주소를 입력해주세요"
+        app:layout_constraintStart_toStartOf="@+id/send_token_address"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView414"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/ko2"
+        android:textStyle="bold"
+        android:textColor="#666666"
+        android:text="보낼 수량을 적어주세요"
+        app:layout_constraintStart_toStartOf="@+id/send_token_money"
+        app:layout_constraintTop_toBottomOf="@+id/send_token_money" />
+
+
+    <TextView
+        android:id="@+id/gas_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/gas_Limit"
+        app:layout_constraintEnd_toEndOf="@+id/send_token_address_find"
+        app:layout_constraintStart_toEndOf="@+id/send_token_address_find"
+        app:layout_constraintTop_toTopOf="@+id/gas_Limit" />
+
+    <TextView
+        android:id="@+id/gas_Limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="42000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/send_token_address_find"
+        app:layout_constraintEnd_toEndOf="@+id/send_token_address_find"
+        app:layout_constraintStart_toEndOf="@+id/send_token_address_find" />
+
+    <TextView
+        android:id="@+id/gas_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginStart="57dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/send_token_address_find"
+        app:layout_constraintEnd_toEndOf="@+id/textView414"
+        app:layout_constraintStart_toEndOf="@+id/token_what" />
+
+    <TextView
+        android:id="@+id/token_what"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:text="TextView"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gas_fee" />
+
+    <Button
+        android:id="@+id/send_token_address_find"
+        android:layout_width="318dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_white_btn"
+        android:fontFamily="@font/ko3"
+        android:text="상대방주소찾기"
+        android:textColor="@color/orange"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.828" />
+
+
+</android.support.constraint.ConstraintLayout>
